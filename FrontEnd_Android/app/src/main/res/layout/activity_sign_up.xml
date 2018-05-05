@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.hajar.firsttry.MainActivity"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Get Started!!"
+            android:textColor="@color/bar"
+            android:textStyle="bold|italic"
+
+            android:textSize="30dp"
+            />
+
+
+        <EditText
+            android:id="@+id/loginclient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Username"
+            android:layout_gravity="center"
+            />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/prenomclient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Firstname"
+
+            />
+
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/nomclient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Lastname"/>
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Address"
+            android:id="@+id/adressecli"/>
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Phone Number"
+            android:id="@+id/telclient"/>
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Email Address"
+            android:id="@+id/email"/>
+
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Password"
+            android:id="@+id/mdpclient"
+            />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="6"
+            android:textColorHint="#000"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:textColor="#000"
+
+            android:hint="Confirm Password"
+            android:id="@+id/mdpconfirm"
+            />
+
+        <Button
+            android:id="@+id/butsignup"
+            android:background="@drawable/buttonselectorstyle"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="SignUp"
+            />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

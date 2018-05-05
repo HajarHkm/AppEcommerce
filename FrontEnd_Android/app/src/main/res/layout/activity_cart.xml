@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hajar.firsttry.Home"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text=" Click and hold to delete item\n "
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        />
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+    />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:id="@+id/priceLayout"
+            android:layout_below="@+id/cart_list"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+
+       <!-- <TableRow>
+            <TextView
+                android:layout_width="160dp"
+                android:id="@+id/totalPriceview"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="TOTAL PRICE (DH)"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_weight="6"
+                    android:textSize="24sp"
+
+                    android:hint="PRICE"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPrice" />
+        </TableRow> -->
+        </TableLayout>
+    <Button
+        android:id="@+id/button_cart"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/priceLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:text="CHECK OUT"
+
+        android:textColor="#FFF"
+        android:textSize="16dp"
+        android:layout_weight="0"
+
+         />
+
+
+</LinearLayout>
+

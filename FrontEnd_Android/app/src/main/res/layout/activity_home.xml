@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="2.5dp"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/bg">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <!--<Button
+        android:background="@drawable/buttonselectorstyle"
+        android:id="@+id/butbasket"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+
+        android:text="My Basket"
+        />-->
+
+    <TextView
+        android:text=" Choose a category\n "
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        />
+
+    <Spinner android:id="@+id/cat_spinner">
+        android:id="@+id/cat_spinner"
+        android:textSize="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+    </Spinner>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+        <!--<Button
+            android:background="@drawable/buttonselectorstyle"
+            android:id="@+id/but_confirm_com"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="Confirm"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="299dp" />-->
+
+</TableLayout>
+</RelativeLayout>
+

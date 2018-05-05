@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="error_field_required">This field is required</string>
+
+
+    <string name="quantity">Quantity: </string>
+    <string name="brew_tea">ADD TO CART</string>
+    <string name="initial_cost">0.00 DH</string>
+    <string name="initial_quantity_value">1</string>
+    <string name="total">Total (DH) </string>
+    <string name="price">PRICE: </string>
+    <string name="action_cart">Shopping Cart</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="fragrance_name">Product Name: </string>
+
+
+    <string-array name="categories_array">
+        <item>Phones</item>
+        <item>Laptops</item>
+        <item>Headphones</item>
+    </string-array>
+
+    <string-array name="commandes">
+        <item>Delivered</item>
+        <item>Delivering</item>
+
+    </string-array>
+    <string name="title_activity_deliver_home">Deliver</string>
+    <string name="title_home">To Deliver</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Orders</string>
+
+
+</resources>

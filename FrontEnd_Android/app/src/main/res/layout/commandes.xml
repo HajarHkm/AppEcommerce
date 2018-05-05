@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent"
+    >
+
+    <TextView
+android:id="@+id/vv"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+
+        android:text="ID: " />
+
+    <TextView
+        android:id="@+id/idcommande"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/vv"
+        android:layout_toRightOf="@+id/vv"
+
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/idclienet"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcommande"
+
+        android:text="Client Id: " />
+
+    <TextView
+        android:id="@+id/idcli"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/idclienet"
+        android:layout_toRightOf="@+id/idclienet"
+        android:layout_below="@+id/idcommande"
+
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/nomcom"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:text="Client: "
+        android:layout_below="@+id/idclienet"/>
+
+
+
+    <TextView
+        android:id="@+id/nomclient"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:text="Nom"
+        android:layout_toEndOf="@+id/nomcom"
+        android:layout_toRightOf="@+id/nom"
+        android:layout_below="@+id/idclienet"/>
+
+    <TextView
+        android:id="@+id/adresscl"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="Address"
+        android:layout_below="@+id/nomclient"/>
+
+    <TextView
+        android:id="@+id/adressecl"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="Client Address"
+        android:layout_toEndOf="@+id/adresscl"
+        android:layout_toRightOf="@+id/adresscl"
+        android:layout_below="@+id/nomclient"/>
+
+
+    <CheckBox
+        android:id="@+id/checkbox_willdelivered"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:buttonTint="#A52A2A"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vv"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:shadowColor="@color/colorPrimary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/adresscl"
+        android:background="#000"/>
+
+
+
+
+
+</RelativeLayout>

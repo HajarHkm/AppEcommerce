@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="ID: " />
+            <TextView
+                android:id="@+id/idcommandelivr"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/id"
+                android:layout_toEndOf="@+id/id"
+                android:textSize="20sp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="1" />
+
+    <CheckBox
+        android:id="@+id/checkbox_delivered"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:buttonTint="#A52A2A"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/idcommandelivr"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="onCheckboxClicked"
+        android:shadowColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:text="Client: "
+        android:layout_below="@+id/idcommandelivr"/>
+
+            <TextView
+                android:id="@+id/nomcli"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_marginTop="@dimen/item_space"
+                android:textSize="16sp"
+                android:text="Nom"
+                android:layout_toEndOf="@+id/nom"
+                android:layout_toRightOf="@+id/nom"
+                android:layout_below="@+id/idcommandelivr"/>
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="Address"
+        android:layout_below="@+id/nomcli"/>
+
+    <TextView
+        android:id="@+id/adressecli"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="@dimen/item_space"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="Client Address"
+        android:layout_toEndOf="@+id/adress"
+        android:layout_toRightOf="@+id/adress"
+        android:layout_below="@+id/nomcli"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/adressecli"
+        android:background="#000"/>
+
+
+
+</RelativeLayout>
